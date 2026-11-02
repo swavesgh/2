@@ -1,0 +1,62 @@
+# Built-in custom Lifesteal.net items (name|optional base item id). Names that differ from the real AH names
+# are harmless - the AH analysis scan adds the exact real names automatically.
+# Ranks
+ELITE [PERMANENT]
+HEROIC [PERMANENT]
+LEGEND [PERMANENT]
+# Rank upgrades
+ELITE → HEROIC [RANK UPGRADE]|orange_dye
+HEROIC → LEGEND [RANK UPGRADE]
+ELITE → LEGEND [RANK UPGRADE]
+# Scrolls
+Enchanted Scroll
+E-Scroll
+# Custom enchants
+Adrenaline
+Artemis
+Ascent
+Athletic
+Autoloading Holster
+Autosmelt
+Berserk
+Bolt
+Bounceback
+Bulwark
+Clapback
+Cleaving
+Compound
+Concuss
+Counter
+Critical
+First Strike
+Hook
+Lifebloom
+Lifesteal
+Low Ground
+Necromancer
+Ninja
+Patient Swing
+Planter
+Pull
+Quarry
+Rally
+Reaper
+Reinforce
+Replant
+Sand Paper
+Shock
+Slash
+Slayer
+Soulbound
+Sustenance
+Tank
+Telekinesis
+Timber
+Trickster
+Unbroken Chain
+Underdog
+Unstable
+Vein Miner
+Volley
+Vortex
+Weightless

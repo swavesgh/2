@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "snipe",
+  "version": "${version}",
+  "name": "AH Sniper",
+  "description": "Tracks auction house prices and buys items under your set price.",
+  "environment": "client",
+  "entrypoints": { "client": ["com.snipe.SnipeMod"] },
+  "depends": { "fabricloader": ">=0.19.0", "minecraft": "~26.2", "java": ">=25", "fabric-api": "*" }
+}

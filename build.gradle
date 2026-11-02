@@ -1,0 +1,22 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+}
+version = project.mod_version
+group = 'com.snipe'
+base { archivesName = 'ahsniper' }
+repositories { mavenCentral() }
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    // No mappings line: 26.x is unobfuscated, official Mojang names are used
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+tasks.withType(JavaCompile).configureEach { options.release = 25 }
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") { expand "version": project.version }
+}
